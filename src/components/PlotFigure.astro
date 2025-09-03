@@ -7,3 +7,10 @@ const plot = Plot.plot({ ...options, document: new JSDOM("").window.document });
 ---
 
 <div set:html={plot.outerHTML} />
+
+<style>
+  div {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }

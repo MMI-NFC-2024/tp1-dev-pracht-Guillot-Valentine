@@ -2,15 +2,15 @@
 import * as Plot from "@observablehq/plot";
 import PlotFigure from "../components/PlotFigure.astro";
 import penguins from "../assets/penguins.json";
-import diamonds from "../assets/diamonds.json";
-import alphabet from "../assets/alphabet.json";
 import Header from "../components/Header.astro";
 ---
 <Header>
 
 </Header>
 <div>
-  <h1>Penguins</h1>
+	<h1>Bases de donnees variees</h1>
+	<p>Visualisation de donnees a l'aide de la librairie Observable Plot</p>
+  <h2>Penguins</h2>
   <PlotFigure
     options={{
       marks: [
@@ -19,3 +19,18 @@ import Header from "../components/Header.astro";
     }}
   />
 </div>
+
+<style>
+	h1, p {
+		text-align: center;
+		font-family: Arial, sans-serif;
+		color: #333;
+	}
+
+	h2 {
+		margin-top: 5rem;
+		text-align: center;
+		font-family: Arial, sans-serif;
+		color: #555;
+	}
+</style>
