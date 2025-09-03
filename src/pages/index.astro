@@ -7,7 +7,7 @@ import alphabet from "../assets/alphabet.json";
 import Header from "../components/Header.astro";
 ---
 <Header>
-	
+
 </Header>
 <div>
   <h1>Penguins</h1>
@@ -16,24 +16,6 @@ import Header from "../components/Header.astro";
       marks: [
         Plot.dot(penguins, { x: "culmen_length_mm", y: "culmen_depth_mm" }),
       ],
-    }}
-  />
-</div>
-
-<div>
-  <h1>Diamonds</h1>
-  <PlotFigure
-    options={{
-      marks: [Plot.dot(diamonds, { x: "carat", y: "color" })],
-    }}
-  />
-</div>
-
-<div>
-  <h1>Alphabet</h1>
-  <PlotFigure
-    options={{
-      marks: [Plot.barY(alphabet, { x: "letter", y: "frequency" })],
     }}
   />
 </div>
